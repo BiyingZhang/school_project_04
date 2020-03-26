@@ -1,0 +1,90 @@
+html {
+	background-color: #BAD5D3;
+}
+
+body {
+	margin: 10px 15vw;
+	padding: 5px 5px 20px 5px;
+	border: 5px solid white;
+	border-radius: 10px;
+	min-height: 90vh;
+	background-color: #EBF4F3;
+}
+
+button {
+	border-radius: 5px;
+	color: white;
+	background-color: #87A7C1;
+	text-align: center;
+	height:20px;
+}
+button:hover {
+	background-color: #475968;
+}
+
+table {
+	width: 100%;
+}
+tr {
+	width: inherit;
+	display: flex;
+	justify-content: space-between;
+	border: 2px solid gray;
+	border-top: none;
+	text-align: center;
+}
+tr.label {
+	border: 2px solid black;
+}
+
+td {
+	width: 100px;
+}
+td.what {
+	width: calc(100% - 200px);
+}
+hr {
+	border-top: 3px solid #87A7C1;
+	border-radius: 3px;
+}
+
+/* input[type="text"] {
+	height: 20px;
+	border-radius: 3px;
+	box-shadow: none;
+	border: 1px solid #E9E9EA;
+	padding: 0px 3px;
+} */
+input {
+	height: 20px;
+	border-radius: 3px;
+	box-shadow: none;
+	border: 1px solid #8D8DAA;
+	padding: 0px 3px;
+}
+
+input[type="button"] {
+	border-radius: 5px;
+	color: white;
+	width: 35px;
+	background-color: #87A7C1;
+	text-align: center;
+	height:20px;
+}
+input[type="button"]:hover {
+	background-color: #475968;
+}
+.container {
+	display: flex;
+	justify-content: space-between;
+	padding: 0px 5px;
+	/* background-color: #EBF4F3; */
+}
+
+.longinput {
+	display: inline-block;
+	width: calc(100% - 54px);
+}
+.report {
+	margin: 5px 0px;
+}

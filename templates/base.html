@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<script type="text/javascript" src="{{ url_for('static', filename='script.js') }}"></script>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+<html>
+	<head>
+		<title>Budgetttt</title>
+		<script type="text/javascript" src="{{ url_for('static', filename='script.js') }}"></script>
+	</head>
+	<body>
+		<div id="category"></div>
+		<div id="uncategorized" class="container">
+			<h2 style="display: inline">Uncategorized</h2>
+			<h4 id="uncatamount" style="display: inline"></h4>
+		</div>
+		<table id="tableuncategorized"><table/>
+		<hr>
+
+		<h2>Add new category: </h2>
+		<form>
+			<div class="container">
+				<div>
+					<input type="text" id="newCat" name="" value="" placeholder="name"/>
+					$<input type="text" id="newLim" name="" value="" placeholder="limit" style="width: 80px"/>
+				</div>
+				<input type="button" id="addNewCat" value="Add" onclick="sendCategory()"/>
+			</div>
+		</form>
+		<hr>
+		<h2>Add new purchase: </h2>
+		<form>
+			<input type="text" id="newPurCat" name="" value="" placeholder="Category"/>
+			$<input type="text" id="newPurAmount" name="" value="" placeholder="amount" style="width: 80px"/>
+			<input type="date" id="newPurDate" name="" value="" placeholder="DD/MM/YYYY"/>
+			<br>
+			<div style="width: 100%">
+				<input type="text" id="newPurWhat" name="" value="" placeholder="what this is spent on" class="longinput"/>
+				<input type="button" id="addNewPur" value="Add" onclick="sendPurchase()" style="display: inline; height: 24px; right:0"/>
+			</div>
+		</form>
+
+	</body>
+</html>
